@@ -3,25 +3,25 @@ html, body {
   background-color: #472c11;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  color: #e0dbd1;
+  color: #faf8f3;
   
 }
 
 .grid-container {
     display: grid;
 
-    grid-template-columns: 80px 1fr 80px;
-  /*     border: 1px solid rgb(0, 0, 0);*/
+    grid-template-columns: 80px 1fr 1fr 1fr 80px;
+      /* border: 5px solid rgb(0, 0, 0);*/
+       grid-auto-rows: auto;
    
 }
 
 
 
-.grid-item{
-    
+.defaultGridItem{
+    grid-auto-rows: auto;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 5;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -29,6 +29,8 @@ html, body {
      width: 100%;
      padding-top: 10px;
      padding-bottom: 10px;
+    
+
     
 }
 
@@ -40,18 +42,39 @@ html, body {
     width: 100%;
     max-height: 100%;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    padding-bottom: 300px
     
 }
 
 
 
 .fullImagegrid-item > h1 {
-    padding-bottom: 300px;
+  
+    font-style: italic;
+    font-weight: 0;
+   
+    
+
+}
+
+.lorem{
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.bookNowGridItem{
+  grid-column-start: 3;
+  grid-column-end: 4;
+ 
+  text-align: center;
+}
+ form {
+  
+
 }
 input {
 
